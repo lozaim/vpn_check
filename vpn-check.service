@@ -1,0 +1,17 @@
+[Unit]
+Description=VPN checking service
+Documentation=
+[Service]
+Type=simple
+User=root
+Group=root
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=1s
+#ExecStartPre=
+ExecStart=/usr/bin/vpn_check.sh
+SyslogIdentifier=vpn_check
+#ExecStop=
+
+[Install]
+WantedBy=multi-user.target
