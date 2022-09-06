@@ -1,6 +1,6 @@
 [Unit]
 Description=VPN checking service
-Documentation=
+Documentation=https://github.com/lozaim/vpn_check
 [Service]
 Type=simple
 User=root
